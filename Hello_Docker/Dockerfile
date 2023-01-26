@@ -1,6 +1,5 @@
 FROM python:3.9
-COPY . /HelloWorld
-WORKDIR /HelloWorld
-ENTRYPOINT ["python", "HelloWorld.py"]
+COPY . .
+ENTRYPOINT ["python", "hello_docker.py"]
 # To run this container: docker run imagename --name="name"
-# Example: docker run badebade/hello_world --name="Bavo"
+# Example: docker run bavodenys/hello_world --name="Bavo"
